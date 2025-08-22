@@ -8,7 +8,7 @@ pipeline {
   environment {
     SSH_KEY = '/var/lib/jenkins/.ssh/id_rsa'       // ✅ Jenkins private SSH key path (to connect to Ansible server)
     ANSIBLE_USER = 'root'                          // 👤 Username for Ansible server login
-    ANSIBLE_IP = '3.111.149.199'                    // 🌐 Ansible server's public IP-chnage this ip when 
+    ANSIBLE_IP = '3.111.149.199'                    // 🌐 Ansible server's public IP-chnage this ip when you again start ansible server & ip changed.
     REMOTE_PATH = '/root/cicdk8'                 // 📁 Folder in Ansible server to copy code into
   }
 
