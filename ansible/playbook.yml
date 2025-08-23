@@ -1,35 +1,35 @@
 ---
-- name: Build and Push Docker Images and then run this playbook
-  hosts: localhost
-  become: yes
-  tasks:
-    - name: Build Backend Docker Image
-      community.docker.docker_image:
-        name: sanjeevy/code-backend2
-        build:
-          path: /root/cicdk8/
-          dockerfile: Dockerfile.backend
-        tag: latest
-        push: true
-        source: build
-    - name: Build API Docker Image (Flask + Nginx)
-      community.docker.docker_image:
-        name: sanjeevy/api-backend2
-        build:
-          path: /root/cicdk8/
-          dockerfile: Dockerfile.api
-        tag: latest
-        push: true
-        source: build
-    - name: Build Frontend Docker Image
-      community.docker.docker_image:
-        name: sanjeevy/frontend2
-        build:
-          path: /root/cicdk8/
-          dockerfile: Dockerfile.frontend
-        tag: latest
-        push: true
-        source: build
+# - name: Build and Push Docker Images and then run this playbook
+#   hosts: localhost
+#   become: yes
+#   tasks:
+#     - name: Build Backend Docker Image
+#       community.docker.docker_image:
+#         name: sanjeevy/code-backend2
+#         build:
+#           path: /root/cicdk8/
+#           dockerfile: Dockerfile.backend
+#         tag: latest
+#         push: true
+#         source: build
+#     - name: Build API Docker Image (Flask + Nginx)
+#       community.docker.docker_image:
+#         name: sanjeevy/api-backend2
+#         build:
+#           path: /root/cicdk8/
+#           dockerfile: Dockerfile.api
+#         tag: latest
+#         push: true
+#         source: build
+#     - name: Build Frontend Docker Image
+#       community.docker.docker_image:
+#         name: sanjeevy/frontend2
+#         build:
+#           path: /root/cicdk8/
+#           dockerfile: Dockerfile.frontend
+#         tag: latest
+#         push: true
+#         source: build
 - name: Copy YAML files to K8s EC2 Node
   hosts: k8s
   tasks:
