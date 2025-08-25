@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: sanjeevy/frontend1:latest
+        image: sanjeevy/frontend4:latest
         ports:
         - containerPort: 80
 ---
