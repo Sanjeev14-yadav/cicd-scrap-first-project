@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name 13.235.244.194;
+    server_name 65.2.10.151;
 
     root /usr/share/nginx/html;
     index index.html;
