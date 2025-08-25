@@ -1,7 +1,7 @@
 server {
     listen 80;
     server_name 65.2.10.151;
-
+    #here i am giving kubernetes worker node ip so that container will created and nginx will work
     root /usr/share/nginx/html;
     index index.html;
 
