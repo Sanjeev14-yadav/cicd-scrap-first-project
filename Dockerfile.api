@@ -26,5 +26,5 @@ RUN ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 EXPOSE 80
 
 # Run both Gunicorn (Flask) and Nginx
-CMD bash -c "gunicorn -w 3 -b 127.0.0.1:5000 api:app & nginx -g 'daemon off;'"
+CMD bash -c "gunicorn -w 3 -b 0.0.0.0:5000 api:app & nginx -g 'daemon off;'"
 
