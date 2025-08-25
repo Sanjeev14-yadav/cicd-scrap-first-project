@@ -1,4 +1,4 @@
 [k8s]
-13.201.119.83 ansible_user=root ansible_ssh_private_key_file=~/.ssh/key-devops-project-ppk.ppk
-#Ansible server's public IP --write ansible public ip above--now given k8 master node ip let check
+52.66.198.175 ansible_user=root ansible_ssh_private_key_file=~/.ssh/key-devops-project-ppk.ppk
+#Ansible server's public IP --write ansible public ip above
 # ec2-k8s-private-ip ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/your-key.pem
