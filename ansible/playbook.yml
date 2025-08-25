@@ -30,15 +30,15 @@
 #         tag: latest
 #         push: true
 #         source: build
-- name: Copy YAML files to K8s EC2 Node
-  hosts: k8s
-  tasks:
-    - name: Copy YAML files to /home/ubuntu/
-      copy:
-        src: /root/cicdk8/k8/
-        dest: /home/ubuntu/k8s/
-        mode: '0644'
-        remote_src: no
+# - name: Copy YAML files to K8s EC2 Node
+#   hosts: k8s
+#   tasks:
+#     - name: Copy YAML files to /home/ubuntu/
+#       copy:
+#         src: /root/cicdk8/k8/
+#         dest: /home/ubuntu/k8s/
+#         mode: '0644'
+#         remote_src: no
 
 #- name: Apply Kubernetes Deployments from Ansible
 #  hosts: k8s
