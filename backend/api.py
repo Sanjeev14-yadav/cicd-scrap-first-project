@@ -1,10 +1,8 @@
 from flask import Flask, jsonify, request
 import math
-from flask_cors import CORS
 import pymysql
 
 app = Flask(__name__)
-CORS(app, origins="*", supports_credentials=True)
 # --- Database Configuration ---
 
 db_config = {
