@@ -21,15 +21,15 @@
         tag: latest
         push: true
         source: build
-#     - name: Build Frontend Docker Image
-#       community.docker.docker_image:
-#         name: sanjeevy/frontend4
-#         build:
-#           path: /root/cicdk8/
-#           dockerfile: Dockerfile.frontend
-#         tag: latest
-#         push: true
-#         source: build
+    - name: Build Frontend Docker Image
+      community.docker.docker_image:
+        name: sanjeevy/frontend4
+        build:
+          path: /root/cicdk8/
+          dockerfile: Dockerfile.frontend
+        tag: latest
+        push: true
+        source: build
 - name: Copy YAML files to K8s EC2 Node
   hosts: k8s
   tasks:
