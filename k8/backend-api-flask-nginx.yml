@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api-backend
-        image: sanjeevy/api-backend5:latest
+        image: sanjeevy/api-backend4:latest
         ports:
         - containerPort: 80
 ---
