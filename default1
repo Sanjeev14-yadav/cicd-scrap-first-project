@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name 13.232.105.61;
+    server_name _;
     #here i am giving kubernetes worker node ip so that container will created and nginx will work
     root /usr/share/nginx/html;
     index index.html;
@@ -12,7 +12,7 @@ server {
 
     # Serve static assets with proper CORS
     location ~* \.(js|css|json|png|jpg|jpeg|gif|ico|woff2?)$ {
-        add_header 'Access-Control-Allow-Origin' '*';
+        # add_header 'Access-Control-Allow-Origin' '*';
         access_log off;
     }
 
