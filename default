@@ -14,14 +14,14 @@ server {
 
         # ✅ NEW: use single origin or '*'
         # hello nginx
-        add_header 'Access-Control-Allow-Origin' 'http://65.2.10.151:31000' always;
+        add_header 'Access-Control-Allow-Origin' 'http://13.232.105.61:31000' always;
         add_header 'Access-Control-Allow-Credentials' 'true' always;
         add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, PUT, DELETE' always;
         add_header 'Access-Control-Allow-Headers' 'Authorization,Content-Type,Origin,Accept' always;
 
         # Preflight OPTIONS requests
         if ($request_method = OPTIONS) {
-            add_header 'Access-Control-Allow-Origin' 'http://65.2.10.151:31000' always;
+            add_header 'Access-Control-Allow-Origin' 'http://13.232.105.61:31000' always;
             add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, PUT, DELETE';
             add_header 'Access-Control-Allow-Headers' 'Authorization,Content-Type,Origin,Accept';
             add_header 'Content-Length' 0;
