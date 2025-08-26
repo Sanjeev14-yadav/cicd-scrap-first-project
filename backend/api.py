@@ -4,7 +4,7 @@ import pymysql
 
 app = Flask(__name__)
 # --- Database Configuration ---
-
+#flask cors removed here
 db_config = {
      'host': 'cicdrdsdb.cjgiuuuoiuzk.ap-south-1.rds.amazonaws.com',
      'user': 'admin',
