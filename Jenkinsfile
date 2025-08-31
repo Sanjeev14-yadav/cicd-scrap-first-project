@@ -35,7 +35,7 @@ pipeline {
           ssh -i $SSH_KEY $ANSIBLE_USER@$ANSIBLE_IP "mkdir -p $REMOTE_PATH"
 
           # ✅ Copy current project code to Ansible server
-          scp -i $SSH_KEY -r /var/lib/jenkins/workspace/cicd-1/cicdk8/* $ANSIBLE_USER@$ANSIBLE_IP:$REMOTE_PATH
+          scp -i $SSH_KEY -r /var/lib/jenkins/workspace/cicd-1/* $ANSIBLE_USER@$ANSIBLE_IP:$REMOTE_PATH
 
           echo "✅ Code successfully copied to Ansible server at $REMOTE_PATH"
         '''
