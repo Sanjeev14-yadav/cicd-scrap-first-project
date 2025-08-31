@@ -8,7 +8,7 @@ pipeline {
   environment {
     SSH_KEY = '/var/lib/jenkins/.ssh/id_rsa'       // ✅ Jenkins private SSH key path (to connect to Ansible server)
     ANSIBLE_USER = 'root'                          // 👤 Username for Ansible server login
-    ANSIBLE_IP = '13.127.212.108'                    // 🌐 Ansible server's public IP-chnage this ip
+    ANSIBLE_IP = '52.66.152.190'                    // 🌐 Ansible server's public IP-chnage this ip
     REMOTE_PATH = '/root/cicdk8'                 // 📁 Folder in Ansible server to copy code into
   }
 
@@ -16,7 +16,7 @@ pipeline {
 
     stage('Clone') {
       steps {
-        git 'https://github.com/Sanjeev14-yadav/cicd-scrap-project.git'
+        git 'https://github.com/Sanjeev14-yadav/cicd-scrap-project1.git'
       }
     }
 
